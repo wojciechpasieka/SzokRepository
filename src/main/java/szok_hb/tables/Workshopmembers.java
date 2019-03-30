@@ -13,7 +13,7 @@ public class Workshopmembers {
     @Id
     private int id;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "participantsID")
     private Participant participantsID;
 
