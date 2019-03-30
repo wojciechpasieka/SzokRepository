@@ -17,7 +17,11 @@ public class Payments {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "orderId")
     private Order orderId;
+
+    @Column
+    @Temporal(TemporalType.TIMESTAMP)
     private Date paymentDate;
+
     private double value;
 
 
