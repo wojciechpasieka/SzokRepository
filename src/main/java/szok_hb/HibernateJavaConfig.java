@@ -22,7 +22,7 @@ public class HibernateJavaConfig implements HibernateConfig {
                 Properties settings = new Properties();
 
                 settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver");
-                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/szok?allowPublicKeyRetrieval=true&useSSL=false");
+                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/szok1.2?allowPublicKeyRetrieval=true&useSSL=false");
                 settings.put(Environment.USER, "root");
                 settings.put(Environment.PASS, "password");
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
@@ -36,6 +36,7 @@ public class HibernateJavaConfig implements HibernateConfig {
                 configuration.addAnnotatedClass(Client.class);
                 configuration.addAnnotatedClass(Conference.class);
                 configuration.addAnnotatedClass(Lecture.class);
+                configuration.addAnnotatedClass(Orders.class);
 
                 serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties())
