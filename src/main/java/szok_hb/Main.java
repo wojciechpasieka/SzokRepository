@@ -11,8 +11,8 @@ public class Main {
 
         try(Session session = sessionFactory.openSession()){
             session.createQuery("from Prelegent").list().forEach(e-> System.out.println(e));
-
         }
+
 
         config.shutdown();
     }

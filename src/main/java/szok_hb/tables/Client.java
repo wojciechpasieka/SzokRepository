@@ -18,5 +18,5 @@ public class Client {
     @Column
     private String name;
     private int discount;
-    
+
 }
