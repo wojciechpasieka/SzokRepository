@@ -17,8 +17,13 @@ public class Main {
 //            session.createQuery("from Lecture").list().forEach(e-> System.out.println(e));
 //        }
 
+//        try(Session session = sessionFactory.openSession()){
+//            session.createQuery("from Orders").list().forEach(e-> System.out.println(e));
+//        }
+
         try(Session session = sessionFactory.openSession()){
             session.createQuery("from Workshops").list().forEach(e-> System.out.println(e));
+            session.createQuery("from Participant").list().forEach(e-> System.out.println(e));
         }
 
         config.shutdown();
