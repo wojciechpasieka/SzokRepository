@@ -22,5 +22,4 @@ public class Conference {
     private Date startDate;
     private Date endDate;
     private int quantityLimit;
-    private int freeVacancys;
 }

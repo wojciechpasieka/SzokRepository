@@ -18,7 +18,7 @@ public class Main {
 //        }
 
         try(Session session = sessionFactory.openSession()){
-            session.createQuery("from Orders").list().forEach(e-> System.out.println(e));
+            session.createQuery("from Workshops").list().forEach(e-> System.out.println(e));
         }
 
         config.shutdown();
