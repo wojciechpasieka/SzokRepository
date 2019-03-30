@@ -37,6 +37,7 @@ public class HibernateJavaConfig implements HibernateConfig {
                 configuration.addAnnotatedClass(Conference.class);
                 configuration.addAnnotatedClass(Lecture.class);
                 configuration.addAnnotatedClass(Orders.class);
+                configuration.addAnnotatedClass(Participant.class);
 
                 serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties())
