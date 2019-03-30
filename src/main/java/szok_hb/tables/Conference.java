@@ -14,7 +14,7 @@ import java.util.Date;
 public class Conference {
 
     @Id
-    private int Id;
+    private int id;
 
     @Column
     private String name;

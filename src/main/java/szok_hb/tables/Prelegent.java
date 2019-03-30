@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Prelegent {
 
     @Id
-    private int Id;
+    private int id;
 
     @Column
     private String firstName;

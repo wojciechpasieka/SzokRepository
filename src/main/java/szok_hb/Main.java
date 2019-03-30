@@ -9,8 +9,12 @@ public class Main {
         HibernateConfig config = new HibernateJavaConfig();
         SessionFactory sessionFactory = config.getSessionFactory();
 
+//        try(Session session = sessionFactory.openSession()){
+//            session.createQuery("from Prelegent").list().forEach(e-> System.out.println(e));
+//        }
+
         try(Session session = sessionFactory.openSession()){
-            session.createQuery("from Prelegent").list().forEach(e-> System.out.println(e));
+            session.createQuery("from Lecture").list().forEach(e-> System.out.println(e));
         }
 
 
