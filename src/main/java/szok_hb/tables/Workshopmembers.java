@@ -1,7 +1,7 @@
 package szok_hb.tables;
 
 import lombok.Data;
-import org.hibernate.criterion.Order;
+
 
 import javax.persistence.*;
 
@@ -23,7 +23,7 @@ public class Workshopmembers {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "orderID")
-    private Order orderID;
+    private Orders orderID;
 
     private boolean payed;
 }
